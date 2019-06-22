@@ -14,7 +14,8 @@
   <link href="<?=BASE.'assets/css/theme-home.css';?>" rel="stylesheet">
 
 
-  <title>Blog Post - Start Bootstrap Template</title>
+  <title>BXEad</title>
+  
 
   <!-- Bootstrap core CSS -->
   <link href="<?=BASE.'assets/bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
@@ -27,33 +28,7 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><?=$curso?></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php $this->load->view('template/nav_header' , array('redirecionar' => base_url('curso/aulas/'.$curso->id) , "nome" => $curso->nome )); ?>
 
   <!-- Page Content -->
   <div class="container">
@@ -68,14 +43,14 @@
 
         <!-- Author -->
         <p class="lead">
-          by
-          <a href="#">Vinicius</a>
+          Por 
+          <a href="#"><?=$autor->nome?></a>
         </p>
 
         <hr>
 
         <!-- Date/Time -->
-        <p>Posted on January 1, 2019 at 12:00 PM</p>
+        <p><?=$aula->datahora_cadastro;?></p>
 
         <hr>
 
@@ -90,19 +65,19 @@
 
         <!-- Comments Form -->
         <div class="card my-4">
-          <h5 class="card-header">Leave a Comment:</h5>
+          <h5 class="card-header">Escreva suas Duvidas e comentarios:</h5>
           <div class="card-body">
             <form>
               <div class="form-group">
                 <textarea class="form-control" id="textarea-comentario" rows="3"></textarea>
               </div>
-              <button type="button" id="comentario" onclick="addNovoComentario(<?=$aula->id;?>)" class="btn btn-primary">Submit</button>
+              <button type="button" id="comentario" onclick="addNovoComentario(<?=$aula->id;?>)" class="btn btn-primary">Comentar</button>
             </form>
           </div>
         </div>
 
         <div id="comentarios">
-          
+
           <?php foreach ($comentarios as $key => $comentario): ?>
 
             <div class="media mb-4">
@@ -110,14 +85,45 @@
               <div class="media-body">
                 <h5 class="mt-0"><?=$comentario->usuario->nome;?></h5>
                 <?=$comentario->duvida;?>
-              </div>
+
+                <?php foreach ($comentario->respostas as $k => $resposta_comentario): ?>
+
+                  <?php //print_r(($resposta_comentario)); ?>
+                  <?php //print_r(($usuario)); ?>
+
+                  <?php if($resposta_comentario->tipo === 'instrutor'): ?>
+                    <div class="media mt-4">
+                      <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                      <div class="media-body">
+                        <h5 class="mt-0"><?=$resposta_comentario->usuario->nome;?></h5>
+                        <?=$resposta_comentario->resposta;?>
+
+                        <textarea class="form-control" id="textarea-resposta-<?=$resposta_comentario->id?>" rows="1"></textarea>
+                        <button type="button" id="comentario"        onclick="addRespostaComentario('#textarea-resposta-<?=$resposta_comentario->id?>' , <?=$usuario->id?> , <?=$resposta_comentario->usuario->id;?>)" class="btn btn-sm mt-1 btn-primary">Responder</button>
+
+                      </div>
+                      <?php else:?>
+                        <div class="media mt-4">
+                          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                          <div class="media-body">
+                            <h5 class="mt-0"><?=$resposta_comentario->usuario->nome;?></h5>
+                            <?=$resposta_comentario->resposta;?>
+
+                          </div>
+                        <?php endif;?>
+
+                      </div>
+                    <?php endforeach; ?>
+
+
+                  </div>
+                </div>
+
+              <?php endforeach; ?>
+
             </div>
 
-          <?php endforeach; ?>
-
-        </div>
-
-        <!-- Single Comment -->
+            <!-- Single Comment -->
         <!-- <div class="media mb-4">
           <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
           <div class="media-body">
@@ -138,12 +144,8 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+  <?php $this->load->view('template/copywrite'); ?>
+  
 
   <!-- Bootstrap core JavaScript -->
   <script src="<?=BASE.'assets/jquery/jquery.min.js';?>"></script>

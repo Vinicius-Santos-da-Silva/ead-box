@@ -28,4 +28,36 @@ class Comentario extends CI_Controller {
     	    ->set_output(json_encode($comentario));
 
 	}
+
+	public function resposta(){
+
+		$cd_autor = $this->input->post('cd_autor');
+		$cd_comentario = $this->input->post('cd_comentario');
+		$resposta  = $this->input->post('resposta');
+		
+		$usuario = $this->session->userdata('aluno');
+
+		$nova_resposta = array(
+			'cd_autor' => $cd_autor,
+			'cd_comentario' => $cd_comentario,
+			'resposta' => $resposta,
+		);
+
+		$insert_resposta = $this->resposta_comentario->add($nova_resposta);
+
+		$resposta = $this->resposta_comentario->get($insert_resposta);
+
+		$resposta->usuario = $this->aluno->get($resposta->cd_autor);
+
+		$this->output
+	        ->set_content_type('application/json')
+    	    ->set_output(json_encode($resposta));
+
+
+
+
+
+
+
+	}
 }

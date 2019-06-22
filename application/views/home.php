@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Heroic Features - Start Bootstrap Template</title>
+  <title>BXEad</title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?=BASE.'assets/bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
@@ -22,41 +22,15 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+ <?php $this->load->view('template/nav_header' , array('redirecionar' => base_url('') , "nome" => "BXEad" )); ?>
 
   <!-- Page Content -->
   <div class="container">
 
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
-      <h1 class="display-3">A Warm Welcome!</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-      <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+      <h1 class="display-3">Bem Vindo!</h1>
+      <p class="lead">Atenção! Este é apenas um sistema de apresentação de meu trabalho.</p>
     </header>
 
     <!-- Page Features -->
@@ -87,13 +61,9 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+   <?php $this->load->view('template/copywrite'); ?>
+
+  
 
   <!-- Bootstrap core JavaScript -->
   <script src="<?BASE.'assets/jquery/jquery.min.js';?>"></script>

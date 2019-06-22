@@ -144,5 +144,7 @@ $autoload['model'] = array(
 	'Videos_model' =>'video',
 	'Aluno_curso_model' => 'aluno_curso',
 	'Duvidas_model' => 'duvida',
+	'Usuario_model' => 'usuario',
+	'Resposta_comentario_model' => 'resposta_comentario'
 );
 

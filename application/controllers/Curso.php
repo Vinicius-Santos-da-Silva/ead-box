@@ -24,7 +24,7 @@ class Curso extends CI_Controller {
 
 		//print_r($aulas_curso);die();
 
-		$this->load->view('curso', array('aulas' => $aulas_curso , 'curso' => $curso->nome));
+		$this->load->view('curso', array('aulas' => $aulas_curso , 'curso' => $curso));
 	}
 
 }
