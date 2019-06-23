@@ -38,22 +38,22 @@
                     </span>
                     
 
-                    <div class="wrap-input100 validate-input mt-1 mb-3" data-validate = "Enter Username">
+                    <div class="wrap-input100 validate-input mt-1 mb-4" data-validate = "Enter Username">
                         <input class="input100" type="text" name="username">
                         <span class="focus-input100" data-placeholder="Username"></span>
                     </div>
 
-                     <div class="wrap-input100 validate-input mt-1 mb-3" data-validate = "Enter Email">
+                     <div class="wrap-input100 validate-input mt-1 mb-4" data-validate = "Enter Email">
                         <input class="input100" type="text" name="email">
                         <span class="focus-input100" data-placeholder="Email"></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input mb-3" data-validate="Enter password">
+                    <div class="wrap-input100 validate-input mb-4" data-validate="Enter password">
                         <input class="input100" type="password" name="senha">
                         <span class="focus-input100" data-placeholder="Password"></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input mb-3" data-validate="Enter password">
+                    <div class="wrap-input100 validate-input mb-4" data-validate="Enter password">
                         <input class="input100" type="password" name="senha-rpt">
                         <span class="focus-input100" data-placeholder="Password"></span>
                     </div>

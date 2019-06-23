@@ -39,7 +39,7 @@
             <p class="card-text">R$ <?=$curso->preco->preco;?></p>
           </div>
           <div class="card-footer">
-            <a href="<?=BASE.'curso/comprar/'.$curso->id?>" class="btn btn-primary">Comprar Curso</a>
+            <a href="<?=BASE.'curso/comprar/'.$curso->id?>" class="btn btn-primary"><img height='15em' src="<?=base_url('assets/images/paypal.jpeg');?>"> Comprar Curso</a>
           </div>
         </div>
       </div>
