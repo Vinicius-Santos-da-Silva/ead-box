@@ -70,6 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+//$active_group = 'server';
 $active_group = 'default';
 $query_builder = TRUE;
 
@@ -97,10 +98,10 @@ $db['default'] = array(
 
 $db['server'] = array(
 	'dsn'	=> '',
-	'hostname' => 'dreamworks.caxubee3zyde.us-east-2.rds.amazonaws.com',
-	'username' => 'vinicius',
-	'password' => 't44zg1g1',
-	'database' => 'marvel',
+	'hostname' => 'remotemysql.com',
+	'username' => '5h1oIPloBe',
+	'password' => 'ivPLl0MpeR',
+	'database' => '5h1oIPloBe',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
