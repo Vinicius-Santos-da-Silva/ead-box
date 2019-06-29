@@ -11,11 +11,11 @@
   <title>BXEad</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="<?=BASE.'assets/bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?=BASE.'assets/css/heroic-features.css';?>" rel="stylesheet">
-  <link href="<?=BASE.'assets/css/theme-home.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/css/heroic-features.css');?>" rel="stylesheet">
+  <link href="<?=static_url('assets/css/theme-home.css');?>" rel="stylesheet">
 
 </head>
 
@@ -39,7 +39,7 @@
             <p class="card-text">R$ <?=$curso->preco->preco;?></p>
           </div>
           <div class="card-footer">
-            <a href="<?=BASE.'curso/comprar/'.$curso->id?>" class="btn btn-primary"><img height='15em' src="<?=base_url('assets/images/paypal.jpeg');?>"> Comprar Curso</a>
+            <a href="<?=base_url('curso/comprar/'.$curso->id);?>" class="btn btn-primary"><img height='15em' src="<?=static_url('assets/images/paypal.jpeg');?>"> Comprar Curso</a>
           </div>
         </div>
       </div>
@@ -57,8 +57,8 @@
 
   
   <!-- Bootstrap core JavaScript -->
-  <script src="<?BASE.'assets/jquery/jquery.min.js';?>"></script>
-  <script src="<?=BASE.'assets/bootstrap/js/bootstrap.bundle.min.js';?>"></script>
+  <script src="<?static_url('assets/jquery/jquery.min.js');?>"></script>
+  <script src="<?=static_url('assets/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
 
 </body>
 
