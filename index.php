@@ -55,6 +55,7 @@
  */
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 	define("BASE" , "http://localhost/udemy/" );
+	//define("BASE" , "http://ec2-18-191-78-63.us-east-2.compute.amazonaws.com/ead-box/" );
 
 
 /*
