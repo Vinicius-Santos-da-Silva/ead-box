@@ -7,22 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="<?=BASE.'assets/bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?=BASE.'assets/css/heroic-features.css';?>" rel="stylesheet">
-  <link href="<?=BASE.'assets/css/theme-home.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/css/heroic-features.css');?>" rel="stylesheet">
+  <link href="<?=static_url('assets/css/theme-home.css');?>" rel="stylesheet">
 
 
   <title>BXEad</title>
   
 
   <!-- Bootstrap core CSS -->
-  <link href="<?=BASE.'assets/bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?=BASE.'css/blog-post.css';?>" rel="stylesheet">
-  <script type="text/javascript" src="<?=BASE.'assets/js/functions.js';?>"></script>
+  <link href="<?=static_url('css/blog-post.css');?>" rel="stylesheet">
+  <script type="text/javascript" src="<?=static_url('assets/js/functions.js');?>"></script>
 
 </head>
 
@@ -148,8 +148,8 @@
   
 
   <!-- Bootstrap core JavaScript -->
-  <script src="<?=BASE.'assets/jquery/jquery.min.js';?>"></script>
-  <script src="<?=BASE.'assets/bootstrap/js/bootstrap.bundle.min.js';?>"></script>
+  <script src="<?=static_url('assets/jquery/jquery.min.js');?>"></script>
+  <script src="<?=static_url('assets/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
 
 </body>
 

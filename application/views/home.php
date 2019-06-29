@@ -11,11 +11,11 @@
   <title>BXEad</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="<?=BASE.'assets/bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?=BASE.'assets/css/heroic-features.css';?>" rel="stylesheet">
-  <link href="<?=BASE.'assets/css/theme-home.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/css/heroic-features.css');?>" rel="stylesheet">
+  <link href="<?=static_url('assets/css/theme-home.css');?>" rel="stylesheet">
 
 </head>
 
@@ -47,7 +47,7 @@
             <p class="card-text"><?=$curso->descricao;?></p>
           </div>
           <div class="card-footer">
-            <a href="<?=BASE.'curso/aulas/'.$curso->id?>" class="btn btn-primary">Acessar Curso</a>
+            <a href="<?=base_url('curso/aulas/'.$curso->id);?>" class="btn btn-primary">Acessar Curso</a>
           </div>
         </div>
       </div>
@@ -66,8 +66,8 @@
   
 
   <!-- Bootstrap core JavaScript -->
-  <script src="<?BASE.'assets/jquery/jquery.min.js';?>"></script>
-  <script src="<?=BASE.'assets/bootstrap/js/bootstrap.bundle.min.js';?>"></script>
+  <script src="<?=static_url('assets/jquery/jquery.min.js');?>"></script>
+  <script src="<?=static_url('assets/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
 
 </body>
 

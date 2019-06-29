@@ -15,11 +15,11 @@
 	<nav class="navbar navbar-inverse bg-dark">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="<?php echo BASE; ?>" class="navbar-brand">EAD - Student</a>
+				<a href="<?php echo base_url(''); ?>" class="navbar-brand">EAD - Student</a>
 				
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="<?php echo BASE; ?>usuario/logout">Sair</a></li>
+				<li><a href="<?php echo base_url(''); ?>usuario/logout">Sair</a></li>
 			</ul>
 		</div>
 	</nav>

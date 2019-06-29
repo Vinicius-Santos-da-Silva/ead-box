@@ -70,6 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+
+//$active_group = 'server';
 $active_group = 'server';
 $query_builder = TRUE;
 
@@ -95,6 +97,7 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
+
 $db['server'] = array(
 	'dsn'	=> '',
 	'hostname' => 'avengers.caxubee3zyde.us-east-2.rds.amazonaws.com',
@@ -116,5 +119,4 @@ $db['server'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-
 

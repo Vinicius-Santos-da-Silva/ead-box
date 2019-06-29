@@ -11,10 +11,10 @@
   <title>BXEad</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="<?=BASE.'assets/bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
+  <link href="<?=static_url('assets/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?=BASE.'css/blog-post.css';?>" rel="stylesheet">
+  <link href="<?=static_url('css/blog-post.css');?>" rel="stylesheet">
 
 </head>
 
@@ -56,7 +56,7 @@
               <p class="card-text"><?=$aula->video->descricao;?></p>
             </div>
             <div class="card-footer">
-              <a href="<?=BASE.'aula/visualizar/'.$aula->id;?>" class="btn btn-primary btn-sm">More Info</a>
+              <a href="<?=base_url('aula/visualizar/'.$aula->id);?>" class="btn btn-primary btn-sm">More Info</a>
             </div>
           </div>
         </div>
@@ -71,8 +71,8 @@
   <?php $this->load->view('template/copywrite'); ?>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="<?BASE.'assets/jquery/jquery.min.js';?>"></script>
-  <script src="<?=BASE.'assets/bootstrap/js/bootstrap.bundle.min.js';?>"></script>
+  <script src="<?static_url('assets/jquery/jquery.min.js');?>"></script>
+  <script src="<?=static_url('assets/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
 
 </body>
 
