@@ -70,6 +70,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+<<<<<<< Updated upstream
+=======
+//$active_group = 'server';
+>>>>>>> Stashed changes
 $active_group = 'server';
 $query_builder = TRUE;
 
@@ -95,6 +99,7 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
+<<<<<<< Updated upstream
 $db['server'] = array(
 	'dsn'	=> '',
 	'hostname' => 'avengers.caxubee3zyde.us-east-2.rds.amazonaws.com',
@@ -117,12 +122,14 @@ $db['server'] = array(
 	'save_queries' => TRUE
 );
 
+=======
+>>>>>>> Stashed changes
 
-$db['teste'] = array(
+$db['server'] = array(
 	'dsn'	=> '',
-	'hostname' => 'dreamworks.caxubee3zyde.us-east-2.rds.amazonaws.com',
-	'username' => 'vinicius',
-	'password' => '$T44zg1g1',
+	'hostname' => 'avengers.caxubee3zyde.us-east-2.rds.amazonaws.com',
+	'username' => 'root',
+	'password' => 't44zg1g1',
 	'database' => 'ead',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
