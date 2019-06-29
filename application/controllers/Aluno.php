@@ -21,7 +21,7 @@ class Aluno extends CI_Controller {
 
 			$this->aluno->setAlunoSession($aluno_login);
 
-			header('location:'.BASE);
+			header('location:'.base_url(''));
 
 		}else{
 			$this->load->view('login');
