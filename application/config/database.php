@@ -100,29 +100,6 @@ $db['server'] = array(
 	'hostname' => 'avengers.caxubee3zyde.us-east-2.rds.amazonaws.com',
 	'username' => 'root',
 	'password' => 't44zg1g1',
-	'database' => 'live',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-
-$db['teste'] = array(
-	'dsn'	=> '',
-	'hostname' => 'dreamworks.caxubee3zyde.us-east-2.rds.amazonaws.com',
-	'username' => 'vinicius',
-	'password' => '$T44zg1g1',
 	'database' => 'ead',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -139,3 +116,5 @@ $db['teste'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+
