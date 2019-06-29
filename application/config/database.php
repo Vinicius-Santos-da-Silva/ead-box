@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 //$active_group = 'server';
-$active_group = 'server';
+$active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
@@ -102,7 +102,7 @@ $db['server'] = array(
 	'dsn'	=> '',
 	'hostname' => 'avengers.caxubee3zyde.us-east-2.rds.amazonaws.com',
 	'username' => 'root',
-	'password' => 't44zg1g1',
+	'password' => 't44zg1g1',	
 	'database' => 'ead',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -119,4 +119,5 @@ $db['server'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
 

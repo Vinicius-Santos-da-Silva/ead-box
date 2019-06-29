@@ -92,6 +92,7 @@ $autoload['drivers'] = array();
 $autoload['helper'] = array('db', 'utils', 'url' , 'static_url');
 
 
+
 /*
 | -------------------------------------------------------------------
 |  Auto-load Config files
@@ -145,6 +146,8 @@ $autoload['model'] = array(
 	'Aluno_curso_model' => 'aluno_curso',
 	'Duvidas_model' => 'duvida',
 	'Usuario_model' => 'usuario',
-	'Resposta_comentario_model' => 'resposta_comentario'
+	'Resposta_comentario_model' => 'resposta_comentario',
+	'Paypal_model' => 'paypal',
+	'Preco_curso_model' => 'preco',
 );
 
