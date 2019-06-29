@@ -41,7 +41,7 @@ class Curso extends CI_Controller {
 			return;
 		}
 
-		$curso->custo = $this->preco->get($curso->id);
+		$curso->custo = $this->preco->get(array('cd_curso'=>$curso->id));
 
 		$this->paypal->setCheckout($curso);
 	}
